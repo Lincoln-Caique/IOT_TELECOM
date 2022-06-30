@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --transpile-only --ignore-watch node_modules src/index.ts",
-    "start": "node src/index.ts"
+    "start": "tsnd --transpile-only --ignore-watch node_modules src/index.ts"
   },
   "dependencies": {
     "@prisma/client": "^4.0.0",
