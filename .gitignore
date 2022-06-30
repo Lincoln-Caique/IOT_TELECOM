@@ -1,3 +1,4 @@
 node_modules
+esp32
 # Keep environment variables out of version control
 .env

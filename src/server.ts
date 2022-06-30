@@ -1,5 +1,5 @@
-import {app} from './App';
+import { app } from './App';
 
-app.listen(3070, () => {
-  console.log('App ativo!')
+app.listen(process.env.PORT || 3070, () => {
+  console.log('App on! 🚀')
 })

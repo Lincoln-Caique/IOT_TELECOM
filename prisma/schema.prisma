@@ -10,6 +10,6 @@ datasource db {
 model Log {
   id          String   @id @default(cuid())
   createdAt   DateTime @default(now())
-  temperature String 
-  humidity    String 
+  temperature String
+  humidity    String
 }
