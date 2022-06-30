@@ -1,5 +1,6 @@
 interface ILogDTO {
-  datalogger: string;
+  temperature: string;
+  humidity: string;
 }
 
-export {ILogDTO}
+export { ILogDTO }

@@ -9,9 +9,9 @@ export class CreateLogController {
   }
 
   async handle(req: Request, res: Response) {
-    const { datalogger } = req.body;
+    const { temperature, humidity } = req.body;
     try {
-      this.logUseCase.execute({datalogger: datalogger} as ILogDTO);
+      this.logUseCase.execute({temperature: temperature, humidity: humidity} as ILogDTO);
     }catch(error){
       console.error(error);
       return res.status(400).json({

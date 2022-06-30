@@ -25,7 +25,8 @@ export class PrismaLogRepository implements ILogRepository {
   async create(data: ILogDTO): Promise<Log> {
     return await this.prisma.log.create({
       data: {
-        datalogger: data.datalogger
+        temperature: data.temperature,
+        humidity: data.humidity
       }
     })
   }
